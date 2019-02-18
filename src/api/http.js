@@ -3,12 +3,11 @@ import axios from 'axios';
 import qs from 'qs';
 
 
-axios.defaults.baseURL = 'http://localhost:8088/'
+axios.defaults.baseURL = 'http://localhost:8080/'
 
 axios.defaults.timeout = 3000
 
-axios.defaults.headers.post['Content-Type'] =
-  'application/x-www-form-urlencoded;charset=UTF-8'
+axios.defaults.headers.post['Content-Type'] ='application/x-www-form-urlencoded;charset=UTF-8'
 
 axios.interceptors.request.use(
   request => {
@@ -26,6 +25,7 @@ axios.interceptors.response.use(
     // 如果返回的状态码为200，说明接口请求成功，可以正常拿到数据
     // 否则的话抛出错误
     if (response.status === 200) {
+      console.log(response.data);
       return Promise.resolve(response)
     } else {
       return Promise.reject(response)
