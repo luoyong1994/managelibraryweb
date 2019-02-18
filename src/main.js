@@ -6,11 +6,10 @@ import router from './router/routerGuard';
 import vuex from './store/index'
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
-import request from './api/api';
+
 
 Vue.use(ElementUI);
 Vue.config.productionTip = false;
-Vue.prototype.$request = request;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
