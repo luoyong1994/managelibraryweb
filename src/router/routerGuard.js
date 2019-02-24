@@ -1,4 +1,5 @@
-import router from './index'
+import router from './index';
+import store from '../store/index';
 router.beforeEach(function(to,from,next){
     if(to.meta.requireAuth==true){
         if(store.state.user){

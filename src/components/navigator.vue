@@ -2,13 +2,23 @@
 <el-container>
   <el-header>
   <el-menu :default-active="this.$router.path" mode="horizontal"  background-color="#B3C0D1" text-color="#ffff" :router="true">
-  <!-- <el-menu-item index="index">首页</el-menu-item>
-  <el-menu-item index="pageTerm">前端笔记</el-menu-item>
-  <el-menu-item index="serviceTerm">后端笔记</el-menu-item>
-  <el-menu-item index="dataBase">数据库笔记</el-menu-item>
-  <el-menu-item index="otherNote">其他的笔记</el-menu-item>
+  <el-menu-item index="index">首页</el-menu-item>
+  <el-menu-item index="adminPage">查看管理员</el-menu-item>
+  <el-menu-item index="readerPage">查看读者</el-menu-item>
+  <!-- <el-submenu index="">
+    <template slot="title">人员管理</template>
+    <el-menu-item index="addAdminPage">添加管理员</el-menu-item>
+    <el-menu-item index="adminPage">查看管理员</el-menu-item>
+  </el-submenu> -->
+  <!-- <el-submenu index="">
+    <template slot="title">读者信息管理</template>
+    <el-menu-item index="addAdminPage">查看读者</el-menu-item>
+    <el-menu-item index="adminPage">查看管理员</el-menu-item>
+  </el-submenu> -->
+  <el-menu-item index="addAdminPage">人员添加</el-menu-item>
+  <el-menu-item index="addBookPage">添加图书</el-menu-item>
   <el-menu-item index="editor">创建我的笔记</el-menu-item>
-  <el-menu-item index="formTest">表单数据提交</el-menu-item> -->
+  <el-menu-item index="formTest">表单数据提交</el-menu-item>
   <el-menu-item index="6" class="header"><i class="el-icon-setting"></i>{{loginName}}</el-menu-item>
 </el-menu>
   </el-header>

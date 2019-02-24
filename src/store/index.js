@@ -32,6 +32,9 @@ const actions = {//异步触发状态，用户异步触发mutations,从而更改
             console.log('您尚未登陆或者session失效')
         }
     },
+    saveUserInfo({commit},userInfo){
+        commit('saveUserInfo',userInfo)
+    }
 }
 
 export default new Vuex.Store({
